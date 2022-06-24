@@ -1,0 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bgenie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/24 19:14:32 by bgenie            #+#    #+#             */
+/*   Updated: 2022/06/24 19:14:36 by bgenie           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef VECTOR_H
+# define VECTOR_H
+# include <stdlib.h>
+# include <stdio.h>
+# include <dlfcn.h>
+
+typedef struct  s_vector
+{
+    void    **ptr;
+    size_t  size;
+    size_t  max_size;
+}               t_vector;
+
+#endif
