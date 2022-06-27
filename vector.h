@@ -16,11 +16,19 @@
 # include <stdio.h>
 # include <dlfcn.h>
 
-typedef struct  s_vector
+typedef struct s_vector
 {
-    void    **ptr;
-    size_t  size;
-    size_t  max_size;
-}               t_vector;
+	void	**ptr;
+	size_t	size;
+	size_t	max_size;
+}	t_vector;
+
+vector	*v_resize(vector *v);
+void	v_destroy(vector *v);
+void	v_puts(vector *v);
+vector	*v_new(size_t size);
+vector	*v_add(vector *v, void *p);
+vector	*v_remove(vector *v, void *p);
+vector	*v_clear(vector *v);
 
 #endif
